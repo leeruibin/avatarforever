@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Model checkpoints and generated media
+checkpoints/
+weights/
+outputs/
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
