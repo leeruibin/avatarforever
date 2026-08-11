@@ -1,8 +1,6 @@
 <div align="center">
 
-<img src="assets/avatar-forever-mark.png" alt="Avatar-Forever logo" width="320" />
-
-# Avatar-Forever
+<img src="assets/avatar-forever-logo.png" alt="Avatar-Forever" width="720" />
 
 ### Decoupled Parallel Training for High-Quality Real-Time Infinite Avatars
 
