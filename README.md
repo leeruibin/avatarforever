@@ -1,14 +1,22 @@
 <div align="center">
 
+<img src="assets/avatar-forever-mark.png" alt="Avatar-Forever logo" width="320" />
+
 # Avatar-Forever
 
 ### Decoupled Parallel Training for High-Quality Real-Time Infinite Avatars
 
-**Real-time · Long-horizon · Audio-driven · 27.2 FPS at 768×512 on one H100**
+**Real-time · Long-horizon · Audio-driven · 27.2 FPS at 768 × 512 on one H100**
 
 Ruibin Li<sup>1,†</sup> · Tao Yang<sup>2</sup> · Zhiyuan Ma<sup>1</sup> · Fangzhou Ai<sup>3</sup> · Shilei Wen<sup>2</sup> · Lei Zhang<sup>1,*</sup>
 
 <sup>1</sup> The Hong Kong Polytechnic University · <sup>2</sup> ByteDance · <sup>3</sup> AMD
+
+<p>
+  <a href="https://leeruibin.github.io/avatarforever-project-page/"><strong>Project Page</strong></a>
+  ·
+  <a href="https://github.com/leeruibin/avatarforever"><strong>Code Repository</strong></a>
+</p>
 
 </div>
 
