@@ -82,7 +82,3 @@ End-to-end throughput includes both DiT inference and VAE decoding.
 ## Citation
 
 BibTeX will be added once the paper metadata is finalized.
-
-## Acknowledgements
-
-This project is developed by researchers from the Visual Computing Lab at The Hong Kong Polytechnic University, ByteDance, and AMD.
