@@ -14,6 +14,8 @@ Ruibin Li<sup>1,†</sup> · Tao Yang<sup>2</sup> · Zhiyuan Ma<sup>1</sup> · F
   <a href="https://leeruibin.github.io/avatarforever-project-page/"><strong>Project Page</strong></a>
   ·
   <a href="https://github.com/leeruibin/avatarforever"><strong>Code Repository</strong></a>
+  ·
+  <a href="https://arxiv.org/abs/2608.12107"><strong>Paper</strong></a>
 </p>
 
 </div>
@@ -21,6 +23,27 @@ Ruibin Li<sup>1,†</sup> · Tao Yang<sup>2</sup> · Zhiyuan Ma<sup>1</sup> · F
 <sub><sup>†</sup> Work done during an internship at ByteDance. <sup>*</sup> Corresponding author.</sub>
 
 > **Research preview.** The paper, code, models, and demos are being prepared for public release.
+
+## Release Status
+
+- [x] Method overview
+- [x] Paper and supplementary material
+- [ ] Inference code
+- [ ] Model checkpoints
+- [ ] Interactive demo
+
+## Highlights
+
+| Capability | Result |
+|---|---:|
+| Video resolution | 768 × 512 |
+| End-to-end throughput | **27.2 FPS** |
+| Hardware | **1× NVIDIA H100** |
+| Backbone | 22B video foundation model |
+| ForeverCache speedup | **23%** |
+| Generation horizon | Effectively unbounded streaming |
+
+End-to-end throughput includes both DiT inference and VAE decoding.
 
 ## Overview
 
@@ -57,28 +80,13 @@ RRT targets the error-propagation pattern encountered during streaming inference
 
 ForeverCache is a chunk-wise history feature cache for streaming diffusion inference. It populates historical context features on the first denoising step of each chunk, then reuses those stable features while forwarding only the current chunk tokens in subsequent steps.
 
-## Highlights
-
-| Capability | Result |
-|---|---:|
-| Video resolution | 768 × 512 |
-| End-to-end throughput | **27.2 FPS** |
-| Hardware | **1× NVIDIA H100** |
-| Backbone | 22B video foundation model |
-| ForeverCache speedup | **23%** |
-| Generation horizon | Effectively unbounded streaming |
-
-End-to-end throughput includes both DiT inference and VAE decoding.
-
-## Release Status
-
-- [x] Method overview
-- [ ] Paper and supplementary material
-- [ ] Inference code
-- [ ] Model checkpoints
-- [ ] Interactive demo
-- [ ] Evaluation suite
-
 ## Citation
-
-BibTeX will be added once the paper metadata is finalized.
+If you find the method useful, please cite
+```
+@article{li2026avatarForever,
+  title={Avatar-Forever: Decoupled Parallel Training for High-Quality Real-Time Infinite Avatars},
+  author={Li, Ruibin and Yang, tao and Ma, Zhiyuan and Ai, Fangzhou and Wen, shilei and Zhang, Lei},
+  journal={arXiv preprint arXiv:2608.12107},
+  year={2026}
+}
+```
